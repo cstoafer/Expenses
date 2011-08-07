@@ -3,11 +3,12 @@ html {
 }
 
 header {
-    border:  5px groove gray;
-    box-shadow: 10px 10px 5px black;
+    border:  4px ridge gray;
+/*    box-shadow: 10px 10px 5px black; */
     margin:  20px;
     padding:  30px;
     height: 70px;
+	border-radius: 25px;
 }
 
 header #header_title {
@@ -43,9 +44,9 @@ body, #content {
 }
 
 body {
-    background-color: #222;
+    background-color: #666;
 }
 
 #content, header, footer {
-    background-color: #eee;
+    background-color: #48b;
 }
