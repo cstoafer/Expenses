@@ -4,10 +4,13 @@
 <h1>
 Households
 </h1>
-<section id="households">
-{% for household in households %}
-    {% render_household household %}
+<ul>
+{% for household in user.person_set.all.0.household_set.all %}
+    <li>
+        {% render_household_pv household %}
+    </li>
 {% endfor %}
+</ul>
 </section>
 
 {%  endblock content %}

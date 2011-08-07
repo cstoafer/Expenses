@@ -1,12 +1,13 @@
-# Create your views here.
+from django.views.generic.detail import DetailView
+from expenses.models import Person, Household
 
-from django.shortcuts import HttpResponse, render_to_response
-from django.template.context import RequestContext
-from expenses.models import Household
 
-def homeView(request):
-    """
-    view for the homepage
-    get all the households to display
-    """
-    return render_to_response('home.html',dict(households = Household.objects.all()), RequestContext(request))
+class PersonView(DetailView):
+    template_name = 'person/person_view.html'
+    context_object_name = 'person'
+    model = Person
+
+class HouseholdView(DetailView):
+    template_name = 'household/household_view.html'
+    context_object_name = 'household'
+    model = Household

@@ -90,6 +90,7 @@
     </table>
     <table name="EXPENSES_HOUSEHOLD" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="name" sqlType="VARCHAR(100)" length="2000000000" precision="10" nullable="true" jdbcType="12" />
       <primary-key columns="id" />
     </table>
     <table name="EXPENSES_HOUSEHOLD_PERSONS" schema="" catalog="" type="TABLE">
@@ -108,12 +109,19 @@
     <table name="EXPENSES_PERSON" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="12" />
       <column name="name" sqlType="VARCHAR(100)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="user_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="12" />
       <primary-key columns="id" />
     </table>
     <table name="EXPENSES_TRANSACTION" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="12" />
       <column name="household_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="12" />
       <column name="transactor_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <primary-key columns="id" />
+    </table>
+    <table name="REGISTRATION_REGISTRATIONPROFILE" schema="" catalog="" type="TABLE">
+      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="user_id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="12" />
+      <column name="activation_key" sqlType="VARCHAR(40)" length="2000000000" precision="10" nullable="false" jdbcType="12" />
       <primary-key columns="id" />
     </table>
     <table name="SOUTH_MIGRATIONHISTORY" schema="" catalog="" type="TABLE">

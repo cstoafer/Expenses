@@ -1,9 +1,16 @@
+from django.contrib.auth.models import User
 from django.db import models
-
 # Create your models here.
 
 class Person(models.Model):
     name = models.CharField(max_length=100)
+    user = models.ForeignKey(User, unique=True)
+
+    def get_absolute_url(self):
+        return ('profiles_profile_detail', (), { 'username': self.user.username })
+    get_absolute_url = models.permalink(get_absolute_url)
+
+# Create your models here.
 
     def __unicode__(self):
         return self.name

@@ -14,7 +14,16 @@ header #header_title {
     font-size: 50;
     float: left;
 }
+
+header #header_title a {
+    text-decoration: none;
+    color: black;
+}
 header navigation {
+    float: right;
+}
+
+header #login_logout {
     float: right;
 }
 

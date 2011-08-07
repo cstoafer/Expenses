@@ -1,6 +1,8 @@
 from constants import *
 import os
 
+PROJECT_NAME = 'Expenses'
+
 def absPath(rel):
     return os.path.join(ROOT_PATH, rel)
 
@@ -67,6 +69,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
+TEMPLATE_DIRS = (
+    'templates',
+)
+
 ROOT_URLCONF = 'Expenses.urls'
 
 INSTALLED_APPS = (
@@ -80,6 +86,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'frontend',
+    'profiles',
+    'registration',
     'expenses',
 )
 
@@ -100,3 +108,8 @@ LOGGING = {
         },
     }
 }
+
+AUTH_PROFILE_MODULE = 'expenses.Person'
+DOMAIN_NAME = 'Balanceer'
+ACCOUNT_ACTIVATION_DAYS = 7
+LOGIN_REDIRECT_URL = '/'

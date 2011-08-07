@@ -1,0 +1,22 @@
+{% load expenses %}
+<div class="person_detail">
+    <div class="person_header">
+        <h1>
+            <a href="{% url frontend:person person.pk %}" >
+                {{ person.name }}
+            </a>
+        </h1>
+    </div>
+    <div class="person_households">
+        <h2>
+            Households
+        </h2>
+        <ul>
+            {% for household in person.household_set.all %}
+            <li>
+                {% render_household household %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

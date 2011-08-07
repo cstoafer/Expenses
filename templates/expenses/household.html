@@ -1,0 +1,21 @@
+<div class="household_detail">
+    <div class="household_header">
+        <h1>
+            {{ household.name }}
+        </h1>
+    </div>
+    <div class="household_persons">
+        <h2>
+            Members
+        </h2>
+        <ul>
+            {% for person in household.persons.all %}
+            <li>
+                <a href="{% url frontend:person person.pk %}" accesskey="">
+                    {{ person.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

@@ -9,11 +9,14 @@
 <body>
 <header>
     <div id="header_title">
-        Balanceer
+        <a href="/">
+            Balanceer
+        </a>
     </div>
     <navigation>
         {% include "base/navigation.html" %}
     </navigation>
+    {% include "accounts/login_logout.html" %}
 </header>
 <section id="content">
         {% block content %}
