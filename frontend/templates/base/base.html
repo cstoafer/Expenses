@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+<head>
+    <title>
+        Balanceer
+    </title>
+    <link rel="stylesheet" type="text/css" href="{%  get_static_prefix %}css/style.css" />
+</head>
+<body>
+<header>
+    <div id="header_title">
+        Balanceer
+    </div>
+    <navigation>
+        navigator
+    </navigation>
+</header>
+<section id="content">
+    <div id="wrapper">
+        {% block content %}
+        {%  endblock content %}
+    </div>
+</section>
+</body>
+</html>

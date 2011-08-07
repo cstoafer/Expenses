@@ -1,0 +1,25 @@
+html {
+    font-family: courier;
+}
+
+header {
+    border:  5px groove gray;
+    box-shadow: 10px 10px 5px black;
+    margin:  20px;
+    padding:  30px;
+    height: 70px;
+}
+
+header #header_title {
+    font-size: 50;
+    float: left;
+}
+header navigation {
+    float: right;
+}
+
+.household {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+}
