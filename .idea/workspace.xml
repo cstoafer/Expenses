@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147cf06d-dcf0-4dc8-81bc-83fbe00ec3c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/static/images/spreadsheet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/expenses/templatetags/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/expenses/templatetags/expenses.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/templates/base/navigation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Expenses.db" afterPath="$PROJECT_DIR$/Expenses.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/templates/household.html" afterPath="$PROJECT_DIR$/expenses/templates/household.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/static/css/style.css" afterPath="$PROJECT_DIR$/frontend/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/templates/base/base.html" afterPath="$PROJECT_DIR$/frontend/templates/base/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/templates/home.html" afterPath="$PROJECT_DIR$/frontend/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/initial_data.json" afterPath="$PROJECT_DIR$/initial_data.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reset.sh" afterPath="$PROJECT_DIR$/reset.sh" />
     </list>
     <ignored path="Expenses.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -138,6 +132,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <array>
+        <option value="jack" />
         <option value="Jack" />
       </array>
     </option>
