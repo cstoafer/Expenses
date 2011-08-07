@@ -18,8 +18,25 @@ header navigation {
     float: right;
 }
 
+footer #logo {
+    float:right;
+}
+
 .household {
     border: 2px solid black;
     padding: 10px;
     margin: 20px;
+}
+
+body, #content {
+    padding: 40px;
+    padding-top: 10px;
+}
+
+body {
+    background-color: #222;
+}
+
+#content, header, footer {
+    background-color: #eee;
 }

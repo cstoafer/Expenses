@@ -1,13 +1,12 @@
 {% extends "base/base.html" %}
-
 {%  block content %}
-
+{% load expenses %}
 <h1>
 Households
 </h1>
 <section id="households">
 {% for household in households %}
-    {% include "household.html" %}
+    {% render_household household %}
 {% endfor %}
 </section>
 

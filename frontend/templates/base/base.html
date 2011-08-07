@@ -12,14 +12,17 @@
         Balanceer
     </div>
     <navigation>
-        navigator
+        {% include "base/navigation.html" %}
     </navigation>
 </header>
 <section id="content">
-    <div id="wrapper">
         {% block content %}
         {%  endblock content %}
-    </div>
 </section>
+<footer>
+     <div id="logo">
+        <img src="{% get_static_prefix %}images/spreadsheet.png" alt="logo" />
+    </div>
+</footer>
 </body>
 </html>

@@ -1,10 +1,11 @@
+{%  load expenses %}
 <div class="household">
     <div class="household_name">
         {{ household.name }}
     </div>
     <div class="household_persons">
         {% for person in household.persons.all %}
-        {%  include "person.html" %}
+        {%  render_person person %}
         {%  endfor %}
     </div>
 </div>
