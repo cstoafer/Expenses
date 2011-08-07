@@ -1,0 +1,9 @@
+dependencies:
+
+django-registration
+django-profiles
+south
+
+in the main directory (here), create a constants.py file:::
+
+
