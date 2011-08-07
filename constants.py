@@ -1,0 +1,12 @@
+PROJECT_NAME = 'Expenses'
+DOMAIN = 'http://localhost:8000'
+ADMIN_UN = 'jack'
+ADMIN_UE = 'jackdreilly@gmail.com'
+ADMIN_PW = 'jack1234'
+DOMAIN_NAME = 'Taco Vs. Taco'
+DB_ENGINE = 'sqlite3' # mysql
+DB_NAME = 'Expenses.db'
+DB_USER = ''
+DB_PASSWORD = ''
+DB_HOST = '' # localhost
+DB_PORT = '' # 3306
