@@ -4,7 +4,9 @@
     <list default="true" id="147cf06d-dcf0-4dc8-81bc-83fbe00ec3c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Expenses.db" afterPath="$PROJECT_DIR$/Expenses.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/models.py" afterPath="$PROJECT_DIR$/expenses/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/urls.py" afterPath="$PROJECT_DIR$/frontend/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views.py" afterPath="$PROJECT_DIR$/frontend/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
     </list>
     <ignored path="Expenses.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expenses/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="94" selection-start="988" selection-end="988" vertical-scroll-proportion="0.4347826">
+            <state line="37" column="31" selection-start="1308" selection-end="1308" vertical-scroll-proportion="-2.6923077">
               <folding>
                 <marker date="1312786004000" expanded="true" signature="893:3476" placeholder="..." />
                 <marker date="1312786004000" expanded="true" signature="1012:1049" placeholder="..." />
@@ -56,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="7" column="38" selection-start="221" selection-end="221" vertical-scroll-proportion="0.26649746">
               <folding />
             </state>
           </provider>
@@ -86,7 +88,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="10" column="73" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +97,16 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expenses/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="72" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.0">
+            <state line="15" column="38" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="113" column="31" selection-start="3127" selection-end="3127" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,15 +116,6 @@
         <entry file="file://$PROJECT_DIR$/templates/expenses/transaction_form.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="35" selection-start="163" selection-end="163" vertical-scroll-proportion="-3.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/expenses/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="35" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,14 +150,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/expenses/household_detail.html" />
         <option value="$PROJECT_DIR$/frontend/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/expenses/transaction_detail.html" />
-        <option value="$PROJECT_DIR$/frontend/views.py" />
         <option value="$PROJECT_DIR$/templates/expenses/household.html" />
         <option value="$PROJECT_DIR$/templates/expenses/transaction_create_tag.html" />
         <option value="$PROJECT_DIR$/constants.py" />
-        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/expenses/utils.py" />
         <option value="$PROJECT_DIR$/expenses/templatetags/expenses.py" />
         <option value="$PROJECT_DIR$/frontend/static/css/style.css" />
@@ -164,6 +163,9 @@
         <option value="$PROJECT_DIR$/expenses/urls.py" />
         <option value="$PROJECT_DIR$/expenses/views.py" />
         <option value="$PROJECT_DIR$/expenses/models.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/frontend/urls.py" />
+        <option value="$PROJECT_DIR$/frontend/views.py" />
       </list>
     </option>
   </component>
@@ -724,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="4" selection-start="2629" selection-end="2629" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/python/2.7.1/lib/python2.7/site-packages/django/contrib/admin/options.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="881" column="0" selection-start="37157" selection-end="37157" vertical-scroll-proportion="0.0">
@@ -748,13 +743,6 @@
     <entry file="file://$PROJECT_DIR$/expenses/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="35" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -780,23 +768,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/urls.py">
+    <entry file="file://$PROJECT_DIR$/expenses/templatetags/expenses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="37" column="36" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expenses/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="31" selection-start="1308" selection-end="1308" vertical-scroll-proportion="-2.6923077">
+          <folding>
+            <marker date="1312786004000" expanded="true" signature="893:3476" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="1012:1049" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="1655:1700" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="2007:2046" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="2570:2581" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="3101:3140" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/expenses/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="72" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.0">
+        <state line="15" column="38" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expenses/templatetags/expenses.py">
+    <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+        <state line="113" column="31" selection-start="3127" selection-end="3127" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -808,17 +810,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expenses/models.py">
+    <entry file="file://$PROJECT_DIR$/frontend/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="94" selection-start="988" selection-end="988" vertical-scroll-proportion="0.4347826">
-          <folding>
-            <marker date="1312786004000" expanded="true" signature="893:3476" placeholder="..." />
-            <marker date="1312786004000" expanded="true" signature="1012:1049" placeholder="..." />
-            <marker date="1312786004000" expanded="true" signature="1655:1700" placeholder="..." />
-            <marker date="1312786004000" expanded="true" signature="2007:2046" placeholder="..." />
-            <marker date="1312786004000" expanded="true" signature="2570:2581" placeholder="..." />
-            <marker date="1312786004000" expanded="true" signature="3101:3140" placeholder="..." />
-          </folding>
+        <state line="10" column="73" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="38" selection-start="221" selection-end="221" vertical-scroll-proportion="0.26649746">
+          <folding />
         </state>
       </provider>
     </entry>
