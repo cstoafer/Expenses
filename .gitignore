@@ -7,3 +7,4 @@ static/*
 */migrations
 constants.py
 .DS_STORE
+*.db
