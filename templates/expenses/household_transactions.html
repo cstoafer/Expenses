@@ -7,6 +7,9 @@
     {% render_transaction_create household %}
     <table class="transaction_table">
     <tr>
+    <th>
+        Edit
+    </th>
         <th>
             Date
         </th>
@@ -27,6 +30,11 @@
     </tr>
     {% for transaction in transactions %}
         <tr>
+        <td>
+            <a href="{% url transaction_edit transaction.id %}">
+                Edit
+            </a>
+        </td>
             <td>
                 {{ transaction.creation_date|date:"D d M Y" }}
             </td>

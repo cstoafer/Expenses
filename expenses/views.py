@@ -20,8 +20,6 @@ class HouseholdTransactionsView(ListView):
         context = super(HouseholdTransactionsView, self).get_context_data(**kwargs)
         household = get_object_or_404(Household, pk = self.kwargs['pk'])
         context['household'] = household
-        #context['persons_ordered'] = (person for person in household.persons.order_by('id'))
-        #context['mults_ordered'] = (transaction.multiplier_set.order_by('person') for transaction in context['transactions'])
         return context
 
     @method_decorator(user_in_household)

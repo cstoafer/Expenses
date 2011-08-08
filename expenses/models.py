@@ -80,7 +80,9 @@ class Transaction(models.Model):
 
 
     def save(self, *args, **kwargs):
-        super(Transaction, self).save(*args, **kwargs)
+        if self.id:
+            super(Transaction, self).save(*args, **kwargs)
+            return
         nMembers = self.household.persons.count()
         def_multipliers = 1./nMembers
         for person in self.household.persons.all():
@@ -99,3 +101,6 @@ class Multiplier(models.Model):
 
     def __unicode__(self):
         return '%f - %s' % (self.multiplier, self.person)
+
+    class Meta:
+        unique_together = (('person', 'transaction'),)
