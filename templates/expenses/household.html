@@ -1,9 +1,6 @@
 <div class="household_detail">
-<div class="transaction_create">
-    <a href="{% url transaction_create %}">
-        Create New Transaction
-    </a>
-</div>
+{% load expenses %}
+{% render_transaction_create household %}
     <div class="household_header">
         <h1>
             {{ household.name }}
@@ -23,4 +20,9 @@
             {% endfor %}
         </ul>
     </div>
+<div class="household_transactions">
+    <a href="{% url household_transactions household.pk %}">
+        Transactions
+    </a>
+</div>
 </div>

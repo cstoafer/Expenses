@@ -1,0 +1,40 @@
+{% extends "expenses/expenses_base.html" %}
+{% block content %}
+    {% load expenses %}
+    <h1>
+    Transactions for <span class="household_name"><a href="{% url household household.pk %}">{{ household.name }}</a></span>
+    </h1>
+    {% render_transaction_create household %}
+    <table class="transaction_table">
+    <tr>
+        <th>
+            Date
+        </th>
+    <th>
+        Transactor
+    </th>
+        {% for person in household.persons.all %}
+        <th>
+            {{ person.name }}
+        </th>
+        {% endfor %}
+    </tr>
+    {% for transaction in transactions %}
+        <tr>
+            <td>
+                {{ transaction.creation_date|date:"D d M Y" }}
+            </td>
+        <td>
+            <a href="{% url person transaction.transactor.pk %}">
+                {{ transaction.transactor }}
+            </a>
+        </td>
+            {% for multiplier in transaction.multiplier_set.all %}
+                <td>
+                    {{ multiplier.multiplier_percent }}
+                </td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock content %}
