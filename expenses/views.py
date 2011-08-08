@@ -12,14 +12,16 @@ class HouseholdTransactionsView(ListView):
     template_name = "expenses/household_transactions.html"
 
     def get_queryset(self):
-        return Transaction.objects.filter(household=get_object_or_404(Household, pk = self.kwargs['pk']))
+        return get_object_or_404(Household, pk = self.kwargs['pk']).transaction_set.order_by('-creation_date')
 
 
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
         context = super(HouseholdTransactionsView, self).get_context_data(**kwargs)
-        # Add in a QuerySet of all the books
-        context['household'] = get_object_or_404(Household, pk = self.kwargs['pk'])
+        household = get_object_or_404(Household, pk = self.kwargs['pk'])
+        context['household'] = household
+        #context['persons_ordered'] = (person for person in household.persons.order_by('id'))
+        #context['mults_ordered'] = (transaction.multiplier_set.order_by('person') for transaction in context['transactions'])
         return context
 
     @method_decorator(user_in_household)

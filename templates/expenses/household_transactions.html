@@ -13,7 +13,13 @@
     <th>
         Transactor
     </th>
-        {% for person in household.persons.all %}
+    <th>
+        Cost
+    </th>
+    <th>
+        Tax
+    </th>
+        {% for person in household.persons|order_by:"name" %}
         <th>
             {{ person.name }}
         </th>
@@ -29,12 +35,40 @@
                 {{ transaction.transactor }}
             </a>
         </td>
-            {% for multiplier in transaction.multiplier_set.all %}
+        <td>
+            {{ transaction.cost_dollar }}
+        </td>
+        <td>
+            {{ transaction.tax_percent }}
+        </td>
+            {% for multiplier in transaction.multiplier_set|order_by:"person__name" %}
                 <td>
                     {{ multiplier.multiplier_percent }}
                 </td>
             {% endfor %}
         </tr>
+    {% endfor %}
+    </table>
+
+    <h2>Balance</h2>
+    <table class="balance_table">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Balance
+        </th>
+    </tr>
+    {% for person in household.balance %}
+    <tr>
+        <td>
+            {{ person.name }}
+        </td>
+        <td>
+            {{ person.balance }}
+        </td>
+    </tr>
     {% endfor %}
     </table>
 {% endblock content %}

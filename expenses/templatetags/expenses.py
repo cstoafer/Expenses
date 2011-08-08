@@ -36,3 +36,8 @@ def percentage(decimal):
 @register.inclusion_tag('expenses/transaction_create_tag.html')
 def render_transaction_create(household):
     return dict(household=household)
+
+@register.filter_function
+def order_by(queryset, args):
+    args = [x.strip() for x in args.split(',')]
+    return queryset.order_by(*args)

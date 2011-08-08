@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147cf06d-dcf0-4dc8-81bc-83fbe00ec3c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/expenses/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/expenses/household_transactions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/expenses/transaction_create_tag.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/expenses/transaction_detail.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/initial_data.json~" afterPath="$PROJECT_DIR$/templates/expenses/transaction.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Expenses.db" afterPath="$PROJECT_DIR$/Expenses.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/models.py" afterPath="$PROJECT_DIR$/expenses/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/templatetags/expenses.py" afterPath="$PROJECT_DIR$/expenses/templatetags/expenses.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/urls.py" afterPath="$PROJECT_DIR$/expenses/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/views.py" afterPath="$PROJECT_DIR$/expenses/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/static/css/style.css" afterPath="$PROJECT_DIR$/frontend/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/expenses/household.html" afterPath="$PROJECT_DIR$/templates/expenses/household.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/expenses/household_transactions.html" afterPath="$PROJECT_DIR$/templates/expenses/household_transactions.html" />
     </list>
     <ignored path="Expenses.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +38,25 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/expenses/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="40" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.41878173">
+            <state line="35" column="44" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.55163044">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="17" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -54,7 +65,25 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expenses/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="46" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0">
+            <state line="14" column="92" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="household_detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/expenses/household_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="household_transactions.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/expenses/household_transactions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="16" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-11.666667">
               <folding />
             </state>
           </provider>
@@ -87,46 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="4" selection-start="2629" selection-end="2629" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="constants.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/constants.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="25" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="household_transactions.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/expenses/household_transactions.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="11" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transaction_create_tag.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/expenses/transaction_create_tag.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="39" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="expenses.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expenses/templatetags/expenses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="29" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+            <state line="37" column="36" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,8 +135,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <array>
-        <option value="Jack" />
         <option value="jack" />
+        <option value="Jack" />
       </array>
     </option>
     <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
@@ -159,14 +152,14 @@
         <option value="$PROJECT_DIR$/frontend/views.py" />
         <option value="$PROJECT_DIR$/templates/expenses/household.html" />
         <option value="$PROJECT_DIR$/templates/expenses/transaction_create_tag.html" />
-        <option value="$PROJECT_DIR$/frontend/static/css/style.css" />
-        <option value="$PROJECT_DIR$/expenses/templatetags/expenses.py" />
-        <option value="$PROJECT_DIR$/templates/expenses/household_transactions.html" />
         <option value="$PROJECT_DIR$/constants.py" />
         <option value="$PROJECT_DIR$/settings.py" />
-        <option value="$PROJECT_DIR$/expenses/views.py" />
         <option value="$PROJECT_DIR$/expenses/utils.py" />
         <option value="$PROJECT_DIR$/expenses/urls.py" />
+        <option value="$PROJECT_DIR$/expenses/views.py" />
+        <option value="$PROJECT_DIR$/expenses/templatetags/expenses.py" />
+        <option value="$PROJECT_DIR$/frontend/static/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/expenses/household_transactions.html" />
         <option value="$PROJECT_DIR$/expenses/models.py" />
       </list>
     </option>
@@ -683,7 +676,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the urls and added the links to create new transaction" />
+    <option name="LAST_COMMIT_MESSAGE" value="decorator fun to prohibit access to certain pages" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -699,26 +692,13 @@
     <MESSAGE value="big old update!" />
     <MESSAGE value="got the multipliers working, still need to fix the url situation for creating things" />
     <MESSAGE value="fixed the urls and added the links to create new transaction" />
+    <MESSAGE value="decorator fun to prohibit access to certain pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/expenses/transaction_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/expenses/transaction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/expenses/household_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -732,23 +712,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="34" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/expenses/household.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="38" selection-start="89" selection-end="89" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/expenses/household_transactions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="11" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -767,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expenses/templatetags/expenses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="4" selection-start="2629" selection-end="2629" vertical-scroll-proportion="0.0">
@@ -788,9 +747,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expenses/views.py">
+    <entry file="file://$PROJECT_DIR$/expenses/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="46" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0">
+        <state line="9" column="20" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/expenses/household_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -802,16 +768,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expenses/urls.py">
+    <entry file="file://$PROJECT_DIR$/expenses/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+        <state line="14" column="92" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expenses/templatetags/expenses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="36" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="17" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/expenses/household_transactions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="16" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-11.666667">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/expenses/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="40" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.41878173">
+        <state line="35" column="44" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.55163044">
           <folding />
         </state>
       </provider>
