@@ -30,6 +30,14 @@ class Transaction(models.Model):
     household = models.ForeignKey(Household)
     transactor = models.ForeignKey(Person)
 
+
+    def save(self, *args, **kwargs):
+        super(Transaction, self).save(*args, **kwargs)
+        nMembers = self.household.persons.count()
+        def_multipliers = 1./nMembers
+        for person in self.household.persons.all():
+            Multiplier(person= person, multiplier = def_multipliers, transaction = self).save()
+
     def __unicode__(self):
         return 'trans: %s, household: %i' % (self.transactor, self.household_id)
 
