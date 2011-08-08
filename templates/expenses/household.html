@@ -11,7 +11,7 @@
         <ul>
             {% for person in household.persons.all %}
             <li>
-                <a href="{% url frontend:person person.pk %}" accesskey="">
+                <a href="{% url person person.pk %}" accesskey="">
                     {{ person.name }}
                 </a>
             </li>
