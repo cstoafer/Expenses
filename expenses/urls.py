@@ -10,6 +10,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
                        url(r'^person/(?P<pk>\d+)$',DetailView.as_view(model=Person, context_object_name='person'), name='person'),
                        url(r'^household/(?P<pk>\d+)$',DetailView.as_view(model=Household, context_object_name='household'), name='household'),
-                       url(r'^household/create/$',CreateView.as_view(model=Household, ), name='household_create'),
-                       url(r'^transaction/create/$',CreateView.as_view(model=Transaction),name='transaction_create'),
+                       url(r'^household/create/$',CreateView.as_view(model=Household,success_url="/" ), name='household_create'),
+                       url(r'^transaction/create/$',CreateView.as_view(model=Transaction, success_url="/"),name='transaction_create'),
 )

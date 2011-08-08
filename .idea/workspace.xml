@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147cf06d-dcf0-4dc8-81bc-83fbe00ec3c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/expenses/transaction_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Expenses.db" afterPath="$PROJECT_DIR$/Expenses.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/models.py" afterPath="$PROJECT_DIR$/expenses/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/urls.py" afterPath="$PROJECT_DIR$/expenses/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/views.py" afterPath="$PROJECT_DIR$/expenses/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/templates/home.html" afterPath="$PROJECT_DIR$/frontend/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/expenses/household.html" afterPath="$PROJECT_DIR$/templates/expenses/household.html" />
     </list>
     <ignored path="Expenses.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,19 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="household.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="household.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/expenses/household.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="6" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+            <state line="3" column="30" selection-start="138" selection-end="138" vertical-scroll-proportion="0.12162162">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="person.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/expenses/person.html">
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+            <state line="4" column="6" selection-start="114" selection-end="194" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -106,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expenses/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="86" selection-start="655" selection-end="655" vertical-scroll-proportion="0.47493404">
+            <state line="13" column="98" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,8 +133,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <array>
-        <option value="jack" />
         <option value="Jack" />
+        <option value="jack" />
       </array>
     </option>
     <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
@@ -144,12 +143,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/profiles/edit_profile.html" />
         <option value="$PROJECT_DIR$/frontend/views.py" />
         <option value="$PROJECT_DIR$/templates/expenses/household_form.html" />
         <option value="$PROJECT_DIR$/frontend/urls.py" />
         <option value="$PROJECT_DIR$/templates/expenses/household_preview.html" />
-        <option value="$PROJECT_DIR$/templates/expenses/household.html" />
         <option value="$PROJECT_DIR$/templates/expenses/person_detail.html" />
         <option value="$PROJECT_DIR$/templates/expenses/person.html" />
         <option value="$PROJECT_DIR$/templates/expenses/expenses_base.html" />
@@ -160,6 +157,8 @@
         <option value="$PROJECT_DIR$/templates/expenses/transaction_form.html" />
         <option value="$PROJECT_DIR$/expenses/models.py" />
         <option value="$PROJECT_DIR$/expenses/urls.py" />
+        <option value="$PROJECT_DIR$/frontend/templates/home.html" />
+        <option value="$PROJECT_DIR$/templates/expenses/household.html" />
       </list>
     </option>
   </component>
@@ -629,20 +628,20 @@
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23214285" sideWeight="0.6707317" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2591389" sideWeight="0.6722561" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2591389" sideWeight="0.6753049" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277439" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3246951" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -673,7 +672,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="big old update!" />
+    <option name="LAST_COMMIT_MESSAGE" value="got the multipliers working, still need to fix the url situation for creating things" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -687,18 +686,12 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="big old update!" />
+    <MESSAGE value="got the multipliers working, still need to fix the url situation for creating things" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -730,13 +723,6 @@
     <entry file="file://$PROJECT_DIR$/templates/expenses/household_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/expenses/household.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="6" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -799,7 +785,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/expenses/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="86" selection-start="655" selection-end="655" vertical-scroll-proportion="0.47493404">
+        <state line="13" column="98" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="114" selection-end="194" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/expenses/household.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="30" selection-start="138" selection-end="138" vertical-scroll-proportion="0.12162162">
           <folding />
         </state>
       </provider>
