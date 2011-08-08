@@ -5,10 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Expenses.db" afterPath="$PROJECT_DIR$/Expenses.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/models.py" afterPath="$PROJECT_DIR$/expenses/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/templatetags/expenses.py" afterPath="$PROJECT_DIR$/expenses/templatetags/expenses.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/expenses/views.py" afterPath="$PROJECT_DIR$/expenses/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/static/css/style.css" afterPath="$PROJECT_DIR$/frontend/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/expenses/household_transactions.html" afterPath="$PROJECT_DIR$/templates/expenses/household_transactions.html" />
     </list>
     <ignored path="Expenses.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +34,15 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/expenses/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="44" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.55163044">
-              <folding />
+            <state line="29" column="94" selection-start="988" selection-end="988" vertical-scroll-proportion="0.4347826">
+              <folding>
+                <marker date="1312786004000" expanded="true" signature="893:3476" placeholder="..." />
+                <marker date="1312786004000" expanded="true" signature="1012:1049" placeholder="..." />
+                <marker date="1312786004000" expanded="true" signature="1655:1700" placeholder="..." />
+                <marker date="1312786004000" expanded="true" signature="2007:2046" placeholder="..." />
+                <marker date="1312786004000" expanded="true" signature="2570:2581" placeholder="..." />
+                <marker date="1312786004000" expanded="true" signature="3101:3140" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,16 +68,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expenses/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="92" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="household_detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/expenses/household_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="21" column="40" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,7 +77,16 @@
       <file leaf-file-name="household_transactions.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/expenses/household_transactions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="16" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-11.666667">
+            <state line="34" column="20" selection-start="805" selection-end="805" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,7 +95,16 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expenses/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+            <state line="17" column="72" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transaction_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/expenses/transaction_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="35" selection-start="163" selection-end="163" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -102,15 +114,6 @@
         <entry file="file://$PROJECT_DIR$/expenses/utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="57" column="35" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="options.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/2.7.1/lib/python2.7/site-packages/django/contrib/admin/options.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="881" column="0" selection-start="37157" selection-end="37157" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,7 +149,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/templates/expenses/household_detail.html" />
-        <option value="$PROJECT_DIR$/templates/expenses/transaction_form.html" />
         <option value="$PROJECT_DIR$/frontend/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/expenses/transaction_detail.html" />
         <option value="$PROJECT_DIR$/frontend/views.py" />
@@ -155,11 +157,12 @@
         <option value="$PROJECT_DIR$/constants.py" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/expenses/utils.py" />
-        <option value="$PROJECT_DIR$/expenses/urls.py" />
-        <option value="$PROJECT_DIR$/expenses/views.py" />
         <option value="$PROJECT_DIR$/expenses/templatetags/expenses.py" />
         <option value="$PROJECT_DIR$/frontend/static/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/expenses/transaction_form.html" />
         <option value="$PROJECT_DIR$/templates/expenses/household_transactions.html" />
+        <option value="$PROJECT_DIR$/expenses/urls.py" />
+        <option value="$PROJECT_DIR$/expenses/views.py" />
         <option value="$PROJECT_DIR$/expenses/models.py" />
       </list>
     </option>
@@ -676,7 +679,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="decorator fun to prohibit access to certain pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -693,25 +696,13 @@
     <MESSAGE value="got the multipliers working, still need to fix the url situation for creating things" />
     <MESSAGE value="fixed the urls and added the links to create new transaction" />
     <MESSAGE value="decorator fun to prohibit access to certain pages" />
+    <MESSAGE value="created the auto balancer, prints out in the transactions summary page" />
+    <MESSAGE value="minor fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/expenses/transaction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/expenses/household_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/expenses/household.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="38" selection-start="89" selection-end="89" vertical-scroll-proportion="-1.25">
@@ -747,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expenses/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/expenses/household_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -764,20 +748,6 @@
     <entry file="file://$PROJECT_DIR$/expenses/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="35" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expenses/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="92" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expenses/templatetags/expenses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -796,17 +766,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/expenses/transaction_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="35" selection-start="163" selection-end="163" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/expenses/household_transactions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="16" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-11.666667">
+        <state line="34" column="20" selection-start="805" selection-end="805" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expenses/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="72" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expenses/templatetags/expenses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="36" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expenses/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="40" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/expenses/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="44" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.55163044">
-          <folding />
+        <state line="29" column="94" selection-start="988" selection-end="988" vertical-scroll-proportion="0.4347826">
+          <folding>
+            <marker date="1312786004000" expanded="true" signature="893:3476" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="1012:1049" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="1655:1700" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="2007:2046" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="2570:2581" placeholder="..." />
+            <marker date="1312786004000" expanded="true" signature="3101:3140" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

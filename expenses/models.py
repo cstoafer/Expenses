@@ -27,7 +27,7 @@ class Household(models.Model):
     persons = models.ManyToManyField(Person)
 
     def __unicode__(self):
-        return ', '.join(str(person) for person in self.persons.all())
+        return '%s: %s' % (self.name, ', '.join(str(person) for person in self.persons.all()))
 
     def balance(self):
         persons = self.persons.all()
@@ -83,6 +83,7 @@ class Transaction(models.Model):
         if self.id:
             super(Transaction, self).save(*args, **kwargs)
             return
+        super(Transaction, self).save(*args, **kwargs)
         nMembers = self.household.persons.count()
         def_multipliers = 1./nMembers
         for person in self.household.persons.all():
