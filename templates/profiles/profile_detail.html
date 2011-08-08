@@ -4,6 +4,9 @@
     <h1>{{ profile.user }}</h1>
     <br/>
     {% if not noProfile %}
+        <a href="{% url profiles_edit_profile %}">
+            Edit Profile
+        </a>
         <h2>Profile</h2>
     <ul>
         <li>

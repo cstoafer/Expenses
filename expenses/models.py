@@ -9,7 +9,10 @@ class Person(models.Model):
     user = models.ForeignKey(User, unique=True)
 
     def get_absolute_url(self):
-        return ('profiles_profile_detail', (), { 'username': self.user.username })
+        """
+        Needed for the profiles application, returns a url ref
+        """
+        return 'profiles_profile_detail', (), { 'username': self.user.username }
     get_absolute_url = models.permalink(get_absolute_url)
 
 # Create your models here.
@@ -30,6 +33,11 @@ class Household(models.Model):
         return '%s: %s' % (self.name, ', '.join(str(person) for person in self.persons.all()))
 
     def balance(self):
+        """
+        returns a list of household members, with an additional field, balance,
+        added to all members
+        balance - the amount above debt for the household member on all household transactions
+        """
         persons = self.persons.all()
         table = dict((person.id, dict(up=0., down=0.)) for person in persons)
         for transaction in self.transaction_set.all():
@@ -59,10 +67,20 @@ class Transaction(models.Model):
     tax = models.FloatField(default=0.0)
 
     def total_cost(self):
+        """
+        total cost of transaction
+        """
         return self.cost*(self.tax + 1.)
 
 
     def up_down_table(self):
+        """
+        table with transaction member ID as key
+        values are a dictionary
+        up: the amount a member is up on the transaction
+        down: same
+        These values are aggregated over all transactions by Household to produce the balance value
+        """
         total_cost = self.total_cost()
         persons = self.household.persons.all()
         table = dict((person.id, dict(up=0., down=0.)) for person in persons)
@@ -73,13 +91,24 @@ class Transaction(models.Model):
 
 
     def tax_percent(self):
+        """
+        pretty printing
+        """
         return '%.1f %%' % round(self.tax*100, 2)
 
     def cost_dollar(self):
+        """
+        pretty printing
+        """
         return '$%.2f' % round(self.cost, 3)
 
 
     def save(self, *args, **kwargs):
+        """
+        if item already exists, and just modifying, then super, and return
+        if not
+        create a multiplier for each transaction member, where default is clean split of all costs
+        """
         if self.id:
             super(Transaction, self).save(*args, **kwargs)
             return
@@ -98,10 +127,16 @@ class Multiplier(models.Model):
     transaction = models.ForeignKey(Transaction)
 
     def multiplier_percent(self):
+        """
+        for printing
+        """
         return '%.1f %%' % round(self.multiplier*100, 2)
 
     def __unicode__(self):
         return '%f - %s' % (self.multiplier, self.person)
 
     class Meta:
+        """
+        unique on a person and transaction
+        """
         unique_together = (('person', 'transaction'),)
