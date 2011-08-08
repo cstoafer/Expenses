@@ -50,3 +50,16 @@ body {
 #content, header, footer {
     background-color: #48b;
 }
+
+
+table, th, td
+{
+border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+}
+
+.household_name a, .household_name{
+    color: #eeddcc;
+    text-decoration: none;
+}

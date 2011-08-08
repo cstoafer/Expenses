@@ -1,6 +1,6 @@
 <span id="login_logout">
     {% if not user.is_anonymous %}
-    <a href="{% url profiles_profile_detail user.username %}">
+        <a href="{% url profiles_profile_detail user.username %}">
         {{ user }}: Profile
     </a>
     <br />

@@ -1,4 +1,6 @@
-from django.contrib.auth.models import User
+import datetime
+from django.contrib.auth.models import User, Permission, Group
+from django.contrib.contenttypes.models import ContentType
 from django.db import models
 # Create your models here.
 
@@ -20,15 +22,72 @@ class Person(models.Model):
 
 
 class Household(models.Model):
-    persons = models.ManyToManyField(Person)
     name = models.CharField(max_length=100, null=True, blank=True)
+    creation_date = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
+    persons = models.ManyToManyField(Person)
 
     def __unicode__(self):
-        return ', '.join(str(person) for person in self.persons.all())
+        return '%s: %s' % (self.name, ', '.join(str(person) for person in self.persons.all()))
+
+    def balance(self):
+        persons = self.persons.all()
+        table = dict((person.id, dict(up=0., down=0.)) for person in persons)
+        for transaction in self.transaction_set.all():
+            up_down = transaction.up_down_table()
+            for k,v in up_down.iteritems():
+                table[k]['up']+=v['up']
+                table[k]['down']+=v['down']
+        out_persons = []
+        for k,v in table.iteritems():
+            person = self.persons.get(id=k)
+            person.balance = v['down'] - v['up']
+            out_persons.append(person)
+        return out_persons
+
+            
+
+            
+
+
+        
 
 class Transaction(models.Model):
     household = models.ForeignKey(Household)
     transactor = models.ForeignKey(Person)
+    creation_date = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
+    cost = models.FloatField()
+    tax = models.FloatField(default=0.0)
+
+    def total_cost(self):
+        return self.cost*(self.tax + 1.)
+
+
+    def up_down_table(self):
+        total_cost = self.total_cost()
+        persons = self.household.persons.all()
+        table = dict((person.id, dict(up=0., down=0.)) for person in persons)
+        table[self.transactor_id]['down']+=total_cost
+        for multiplier in self.multiplier_set.all():
+            table[multiplier.person_id]['up']+=multiplier.multiplier*total_cost
+        return table
+
+
+    def tax_percent(self):
+        return '%.1f %%' % round(self.tax*100, 2)
+
+    def cost_dollar(self):
+        return '$%.2f' % round(self.cost, 3)
+
+
+    def save(self, *args, **kwargs):
+        if self.id:
+            super(Transaction, self).save(*args, **kwargs)
+            return
+        super(Transaction, self).save(*args, **kwargs)
+        nMembers = self.household.persons.count()
+        def_multipliers = 1./nMembers
+        for person in self.household.persons.all():
+            Multiplier(person= person, multiplier = def_multipliers, transaction = self).save()
 
     def __unicode__(self):
         return 'trans: %s, household: %i' % (self.transactor, self.household_id)
@@ -38,5 +97,11 @@ class Multiplier(models.Model):
     multiplier = models.FloatField()
     transaction = models.ForeignKey(Transaction)
 
+    def multiplier_percent(self):
+        return '%.1f %%' % round(self.multiplier*100, 2)
+
     def __unicode__(self):
         return '%f - %s' % (self.multiplier, self.person)
+
+    class Meta:
+        unique_together = (('person', 'transaction'),)
