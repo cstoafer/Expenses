@@ -1,7 +1,9 @@
 # Create your views here.
 from django.shortcuts import get_object_or_404
 from django.utils.decorators import method_decorator
+from django.views.generic.edit import FormView, CreateView, UpdateView
 from django.views.generic.list import ListView
+from expenses.forms import HouseholdTransactionForm
 from expenses.utils import user_in_household
 from models import Household, Transaction
 
@@ -25,3 +27,21 @@ class HouseholdTransactionsView(ListView):
     @method_decorator(user_in_household)
     def dispatch(self, *args, **kwargs):
         return super(HouseholdTransactionsView, self).dispatch(*args, **kwargs)
+
+
+class HouseholdTransactionCreateView(CreateView):
+    form_class = HouseholdTransactionForm
+    success_url = '/'
+    template_name = 'expenses/household_transaction_form.html'
+
+    def get_initial(self):
+        initial = super(HouseholdTransactionCreateView,self).get_initial()
+        if self.kwargs.has_key('pk'):
+            initial.update(dict(household = get_object_or_404(Household,pk=self.kwargs['pk'])))
+        return initial
+
+class HouseholdTransactionUpdateView(UpdateView):
+    form_class = HouseholdTransactionForm
+    success_url = '/'
+    template_name = 'expenses/transaction_edit.html'
+    model = Transaction
