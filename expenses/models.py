@@ -13,15 +13,13 @@ class Person(models.Model):
         Needed for the profiles application, returns a url ref
         """
         return 'profiles_profile_detail', (), { 'username': self.user.username }
-    get_absolute_url = models.permalink(get_absolute_url)
-
-# Create your models here.
-
+	get_absolute_url = models.permalink(get_absolute_url)
     def __unicode__(self):
         return self.name
-
     def __str__(self):
         return self.__unicode__()
+    class Meta:
+        verbose_name_plural = "people"
 
 
 class Household(models.Model):
