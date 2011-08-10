@@ -50,12 +50,6 @@ class Household(models.Model):
             out_persons.append(person)
         return out_persons
 
-            
-
-            
-
-
-        
 
 class Transaction(models.Model):
     household = models.ForeignKey(Household)
