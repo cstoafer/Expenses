@@ -13,14 +13,17 @@ class HouseholdTransactionForm(ModelForm):
         model = Transaction
 
     def __init__(self,*args,**kwargs):
-        super(HouseholdTransactionForm,self).__init__(*args, **kwargs)
-        if self.instance:
-            persons = self.instance.household.persons
-        elif self.initial.has_key('household'):
-            persons  = self.initial['household'].persons
-        else:
-            persons = Person.objects.all()
-        self.fields['transactor'].queryset = persons
+		try:
+			super(HouseholdTransactionForm,self).__init__(*args, **kwargs)
+			if self.instance:
+				persons = self.instance.household.persons
+			elif self.initial.has_key('household'):
+				persons  = self.initial['household'].persons
+			else:
+				persons = Person.objects.all()
+			self.fields['transactor'].queryset = persons
+		except:
+			"you suck" 
 
 
 
