@@ -4,7 +4,7 @@
     <h1>
     Transactions for <span class="household_name"><a href="{% url household household.pk %}">{{ household.name }}</a></span>
     </h1>
-    {% render_transaction_create household %}
+    {% render_household_transaction_create household %}
     <table class="transaction_table">
     <tr>
     <th>
@@ -31,7 +31,7 @@
     {% for transaction in transactions %}
         <tr>
         <td>
-            <a href="{% url transaction_edit transaction.id %}">
+            <a href="{% url transaction_edit transaction.pk %}">
                 Edit
             </a>
         </td>

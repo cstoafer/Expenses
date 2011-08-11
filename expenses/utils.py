@@ -43,6 +43,7 @@ def user_in_household(f):
     an argument from the original function and from
     the decorated function, then finally executes
     the original function inside
+	fuck you jack, that paragraph means nothing
     """
 
     def check_func(*args,**kwargs):
