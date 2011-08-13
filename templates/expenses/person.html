@@ -2,20 +2,13 @@
 <div class="person_detail">
     <div class="person_header">
         <h1>
-            <a href="{% url person person.pk %}" >
-                {{ person.name }}
-            </a>
+			{{ person.user.get_full_name}}'s Households
         </h1>
     </div>
     <div class="person_households">
-        <h2>
-            Households
-        </h2>
         <ul>
             {% for household in person.household_set.all %}
-            <li>
-                {% render_household household %}
-            </li>
+            <li> {% render_household household %} </li>
             {% endfor %}
         </ul>
     </div>
