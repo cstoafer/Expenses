@@ -1,15 +1,18 @@
 <div class="household_detail">
 {% load expenses %}
-{% render_household_transaction_create household %}
     <div class="household_header">
         <h1>
             {{ household.name }}
         </h1>
     </div>
+<div class="household_transactions">
+    <a href="{% url household_transactions household.pk %}">Transactions </a>
+	{% render_household_transaction_create household %}
+</div>
     <div class="household_persons">
-        <h2>
+        <h3>
             Members
-        </h2>
+        </h3>
         <ul>
             {% for person in household.persons.all %}
             <li>
@@ -20,9 +23,4 @@
             {% endfor %}
         </ul>
     </div>
-<div class="household_transactions">
-    <a href="{% url household_transactions household.pk %}">
-        Transactions
-    </a>
-</div>
 </div>
