@@ -1,0 +1,110 @@
+Downloading/unpacking django-profiles
+  Getting page http://pypi.python.org/simple/django-profiles
+  URLs to search for versions for django-profiles:
+  * http://pypi.python.org/simple/django-profiles
+  Getting page http://www.bitbucket.org/ubernostrum/django-profiles/wiki/
+  Getting page http://www.bitbucket.org/ubernostrum/django-profiles/get/v0.2.gz
+  Analyzing links from page http://pypi.python.org/simple/django-profiles/
+    Found link http://pypi.python.org/packages/source/d/django-profiles/django-profiles-0.2.tar.gz#md5=3e02818cbf38c8764c6efbcae387836b (from http://pypi.python.org/simple/django-profiles/), version: 0.2
+    Skipping link http://www.bitbucket.org/ubernostrum/django-profiles/wiki/ (from http://pypi.python.org/simple/django-profiles/); not a file
+    Skipping link http://www.bitbucket.org/ubernostrum/django-profiles/get/v0.2.gz (from http://pypi.python.org/simple/django-profiles/); unknown archive format: .gz
+  Analyzing links from page https://bitbucket.org/ubernostrum/django-profiles/wiki/
+    Skipping link https://bitbucket.org/static/hgicon.png (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); unknown archive format: .png
+    Skipping link https://bitbucket.org/static/style-paper.css (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); unknown archive format: .css
+    Skipping link https://bitbucket.org/atom-log (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/rss-log (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link http://mercurial.selenic.com/ (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/graph/7ffa75ff58e5 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/tags (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/bookmarks (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/branches (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/rev/7ffa75ff58e5 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/file/7ffa75ff58e5 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Could not parse version from link: https://bitbucket.org/archive/tip.tar.bz2 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/)
+    Skipping link https://bitbucket.org/archive/tip.tar.bz2 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); wrong project name (not django-profiles)
+    Could not parse version from link: https://bitbucket.org/archive/tip.zip (from https://bitbucket.org/ubernostrum/django-profiles/wiki/)
+    Skipping link https://bitbucket.org/archive/tip.zip (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); wrong project name (not django-profiles)
+    Could not parse version from link: https://bitbucket.org/archive/tip.tar.gz (from https://bitbucket.org/ubernostrum/django-profiles/wiki/)
+    Skipping link https://bitbucket.org/archive/tip.tar.gz (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); wrong project name (not django-profiles)
+    Skipping link https://bitbucket.org/help (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/ (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/shortlog/3?revcount=30 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/shortlog/3?revcount=120 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/shortlog/54136a546177 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/shortlog/tip (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/rev/e86cd54a6278 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/rev/7fa9c40675b1 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+    Skipping link https://bitbucket.org/rev/54136a546177 (from https://bitbucket.org/ubernostrum/django-profiles/wiki/); not a file
+  Analyzing links from page https://bitbucket.org/ubernostrum/django-profiles/get/v0.2.tar.gz
+  Downloading django-profiles-0.2.tar.gz
+  Downloading from URL http://pypi.python.org/packages/source/d/django-profiles/django-profiles-0.2.tar.gz#md5=3e02818cbf38c8764c6efbcae387836b (from http://pypi.python.org/simple/django-profiles/)
+  Running setup.py egg_info for package django-profiles
+    running egg_info
+    creating pip-egg-info/django_profiles.egg-info
+    writing pip-egg-info/django_profiles.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/django_profiles.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/django_profiles.egg-info/dependency_links.txt
+    writing manifest file 'pip-egg-info/django_profiles.egg-info/SOURCES.txt'
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/django_profiles.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'pip-egg-info/django_profiles.egg-info/SOURCES.txt'
+  Source in ./build/django-profiles has version 0.2, which satisfies requirement django-profiles
+Installing collected packages: django-profiles
+  Running setup.py install for django-profiles
+    Running command /usr/bin/python -c "import setuptools; __file__='/home/sean/Hacking/Expenses/build/django-profiles/setup.py'; execfile('/home/sean/Hacking/Expenses/build/django-profiles/setup.py')" install --single-version-externally-managed --record /tmp/pip-7PO3iO-record/install-record.txt --install-headers /home/sean/Hacking/Expenses/lib/include
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-2.6
+    creating build/lib.linux-x86_64-2.6/profiles
+    copying profiles/__init__.py -> build/lib.linux-x86_64-2.6/profiles
+    copying profiles/urls.py -> build/lib.linux-x86_64-2.6/profiles
+    copying profiles/utils.py -> build/lib.linux-x86_64-2.6/profiles
+    copying profiles/views.py -> build/lib.linux-x86_64-2.6/profiles
+    running install_lib
+    creating /usr/local/lib/python2.6/dist-packages/profiles
+    error: could not create '/usr/local/lib/python2.6/dist-packages/profiles': Permission denied
+    Complete output from command /usr/bin/python -c "import setuptools; __file__='/home/sean/Hacking/Expenses/build/django-profiles/setup.py'; execfile('/home/sean/Hacking/Expenses/build/django-profiles/setup.py')" install --single-version-externally-managed --record /tmp/pip-7PO3iO-record/install-record.txt --install-headers /home/sean/Hacking/Expenses/lib/include:
+    running install
+
+running build
+
+running build_py
+
+creating build
+
+creating build/lib.linux-x86_64-2.6
+
+creating build/lib.linux-x86_64-2.6/profiles
+
+copying profiles/__init__.py -> build/lib.linux-x86_64-2.6/profiles
+
+copying profiles/urls.py -> build/lib.linux-x86_64-2.6/profiles
+
+copying profiles/utils.py -> build/lib.linux-x86_64-2.6/profiles
+
+copying profiles/views.py -> build/lib.linux-x86_64-2.6/profiles
+
+running install_lib
+
+creating /usr/local/lib/python2.6/dist-packages/profiles
+
+error: could not create '/usr/local/lib/python2.6/dist-packages/profiles': Permission denied
+
+----------------------------------------
+Command /usr/bin/python -c "import setuptools; __file__='/home/sean/Hacking/Expenses/build/django-profiles/setup.py'; execfile('/home/sean/Hacking/Expenses/build/django-profiles/setup.py')" install --single-version-externally-managed --record /tmp/pip-7PO3iO-record/install-record.txt --install-headers /home/sean/Hacking/Expenses/lib/include failed with error code 1
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 410, in run
+    requirement_set.install(install_options)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 2017, in install
+    requirement.install(install_options)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1515, in install
+    cwd=self.source_dir, filter_stdout=self._filter_install, show_stdout=False)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 3543, in call_subprocess
+    % (command_desc, proc.returncode))
+InstallationError: Command /usr/bin/python -c "import setuptools; __file__='/home/sean/Hacking/Expenses/build/django-profiles/setup.py'; execfile('/home/sean/Hacking/Expenses/build/django-profiles/setup.py')" install --single-version-externally-managed --record /tmp/pip-7PO3iO-record/install-record.txt --install-headers /home/sean/Hacking/Expenses/lib/include failed with error code 1
