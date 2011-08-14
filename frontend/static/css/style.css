@@ -58,13 +58,9 @@ table, th, td {
     margin: 10px;
 }
 
-.household_name a, .household_name{
+.household_header, .household_header a, .household_name a, .household_name{
     color: #eeddcc;
     text-decoration: none;
-}
-
-.household_header {
-    color: #eeddcc;
 }
 
 .person_header {

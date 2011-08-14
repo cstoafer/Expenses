@@ -1,7 +1,7 @@
 {% extends "expenses/expenses_base.html" %}
 {% block content %}
     <h1>
-    Edit Transaction for {{ form.instance.household.name }}
+    Edit Transaction for <span class="household_name"><a href="{% url household form.instance.household.pk %}">{{ form.instance.household.name }}</a></span>
     </h1>
 <form method="POST" action="">
 {% csrf_token %}
