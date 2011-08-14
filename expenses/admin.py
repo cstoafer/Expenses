@@ -5,5 +5,6 @@ site.register(Person)
 site.register(Household)
 site.register(Multiplier)
 site.register(Transaction)
+site.register(Invited)
 
 

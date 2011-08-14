@@ -138,3 +138,18 @@ class Multiplier(models.Model):
         unique on a person and transaction
         """
         unique_together = (('person', 'transaction'),)
+      
+class Invited(models.Model):
+    user = models.ForeignKey(User)
+    household = models.ForeignKey(Household)
+    invitation_date = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
+    message = models.TextField(null=True, blank=True)
+    
+    def __unicode__(self):
+        return 'Household: %s, Invitee: %s' % (self.household, self.user)
+        
+    class Meta:
+        """
+        unique between a household and invitees
+        """
+        unique_together = (('household', 'user'),)

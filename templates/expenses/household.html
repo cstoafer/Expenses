@@ -11,7 +11,7 @@
 </div>
     <div class="household_persons">
         <h3>
-            Members
+            Members <a href="{% url invite_to_household household.pk %}"> Invite </a>
         </h3>
         <ul>
             {% for person in household.persons.all %}
