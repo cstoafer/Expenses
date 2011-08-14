@@ -6,8 +6,7 @@ from frontend.views import loggedInView
 
 admin.autodiscover()
 
-
 urlpatterns = patterns('',
-                       url(r'^loggedin', loggedInView, name='logged_in'),
-                       url(r'^$',login_required(TemplateView.as_view(template_name='home.html')), name='home'),
+	url(r'^loggedin', loggedInView, name='logged_in'),
+	url(r'^$',login_required(TemplateView.as_view(template_name='home.html')), name='home'),
 )

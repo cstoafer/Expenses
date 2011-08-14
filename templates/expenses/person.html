@@ -5,6 +5,9 @@
 			{{ person.user.get_full_name}}'s Households
         </h1>
     </div>
+	<div class="household_create_link">
+		<a href="{% url household_create %}"> Create New Household </a>
+	</div>
     <div class="person_households">
         <ul>
             {% for household in person.household_set.all %}

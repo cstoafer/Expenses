@@ -7,25 +7,13 @@
     {% render_household_transaction_create household %}
     <table class="transaction_table">
     <tr>
-    <th>
-        Edit
-    </th>
-        <th>
-            Date
-        </th>
-    <th>
-        Transactor
-    </th>
-    <th>
-        Cost
-    </th>
-    <th>
-        Tax
-    </th>
+		<th> Edit </th>
+        <th> Date </th>
+		<th> Transactor </th>
+		<th> Cost </th>
+		<th> Tax </th>
         {% for person in household.persons|order_by:"name" %}
-        <th>
-            {{ person.name }}
-        </th>
+        <th> {{ person.name }} </th>
         {% endfor %}
     </tr>
     {% for transaction in transactions %}
@@ -58,25 +46,5 @@
     {% endfor %}
     </table>
 
-    <h2>Balance</h2>
-    <table class="balance_table">
-    <tr>
-        <th>
-            Name
-        </th>
-        <th>
-            Balance
-        </th>
-    </tr>
-    {% for person in household.balance %}
-    <tr>
-        <td>
-            {{ person.name }}
-        </td>
-        <td>
-            {{ person.balance }}
-        </td>
-    </tr>
-    {% endfor %}
-    </table>
+	{% render_balance_table household %}
 {% endblock content %}

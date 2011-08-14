@@ -30,15 +30,17 @@ class HouseholdTransactionsView(ListView):
 
 
 class HouseholdTransactionCreateView(CreateView):
-    form_class = HouseholdTransactionForm
-    success_url = '/'
-    template_name = 'expenses/household_transaction_form.html'
+	form_class = HouseholdTransactionForm
+	success_url = '/'
+	template_name = 'expenses/household_transaction_form.html'
 	
-    def get_initial(self):
-        initial = super(HouseholdTransactionCreateView,self).get_initial()
-        if self.kwargs.has_key('pk'):
-            initial.update(dict(household = get_object_or_404(Household,pk=self.kwargs['pk'])))
-        return initial
+	def get_initial(self):
+		initial = super(HouseholdTransactionCreateView,self).get_initial()
+		if self.kwargs.has_key('pk'):
+			h = get_object_or_404(Household,pk=self.kwargs['pk'])
+			initial.update(dict(household = h))
+			self.success_url = h.get_absolute_url()
+		return initial
 
 class HouseholdTransactionUpdateView(UpdateView):
     form_class = HouseholdTransactionForm
