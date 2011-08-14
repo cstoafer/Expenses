@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404
 from django.utils.decorators import method_decorator
 from django.views.generic.edit import FormView, CreateView, UpdateView
 from django.views.generic.list import ListView
-from expenses.forms import HouseholdTransactionForm
+from expenses.forms import HouseholdTransactionForm, HouseholdCreateForm
 from expenses.utils import user_in_household
 from models import Household, Transaction
 
@@ -30,18 +30,29 @@ class HouseholdTransactionsView(ListView):
 
 
 class HouseholdTransactionCreateView(CreateView):
-    form_class = HouseholdTransactionForm
-    success_url = '/'
-    template_name = 'expenses/household_transaction_form.html'
-
-    def get_initial(self):
-        initial = super(HouseholdTransactionCreateView,self).get_initial()
-        if self.kwargs.has_key('pk'):
-            initial.update(dict(household = get_object_or_404(Household,pk=self.kwargs['pk'])))
-        return initial
+	form_class = HouseholdTransactionForm
+	success_url = '/'
+	template_name = 'expenses/household_transaction_form.html'
+	
+	def get_initial(self):
+		initial = super(HouseholdTransactionCreateView,self).get_initial()
+		if self.kwargs.has_key('pk'):
+			h = get_object_or_404(Household,pk=self.kwargs['pk'])
+			initial.update(dict(household = h))
+			self.success_url = h.get_absolute_url()
+		return initial
 
 class HouseholdTransactionUpdateView(UpdateView):
     form_class = HouseholdTransactionForm
     success_url = '/'
     template_name = 'expenses/transaction_edit.html'
     model = Transaction
+
+class HouseholdCreateView(CreateView):
+	form_class = HouseholdCreateForm
+	template_name = 'expenses/household_form.html'
+	success_url = '/'
+	def get_initial(self):
+		initial = super(HouseholdCreateView,self).get_initial()
+		initial.update(dict(person = self.request.user.person_set.all()[0]))
+		return initial

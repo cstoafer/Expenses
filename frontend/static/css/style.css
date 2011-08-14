@@ -52,9 +52,8 @@ body {
 }
 
 
-table, th, td
-{
-border: 1px solid black;
+table, th, td {
+	border: 1px solid black;
     text-align: center;
     margin: 10px;
 }
@@ -62,4 +61,15 @@ border: 1px solid black;
 .household_name a, .household_name{
     color: #eeddcc;
     text-decoration: none;
+}
+
+.household_header {
+    color: #eeddcc;
+}
+
+.person_header {
+    border: 1px solid black;
+	text-align: center;
+	font-size: 25px; 
+	border-radius: 10px;
 }

@@ -3,8 +3,6 @@ from django.forms.models import ModelForm
 from django.shortcuts import get_object_or_404
 from expenses.models import Transaction, Household, Person
 
-__author__ = 'jackdreilly'
-
 
 class HouseholdTransactionForm(ModelForm):
 
@@ -26,5 +24,14 @@ class HouseholdTransactionForm(ModelForm):
 			"you suck" 
 
 
-
-    
+class HouseholdCreateForm(ModelForm):
+	class Meta:
+		model = Household
+		fields = ('name',)
+	def save(self, force_insert=False, force_update=False, commit=True):
+# don't really get this, just copied it from stackoverflow
+		m = super(HouseholdCreateForm, self).save(commit=False)
+		if commit:
+			m.save()
+		m.persons.add(self.initial['person'])
+		return m
