@@ -27,9 +27,7 @@
                 {{ transaction.creation_date|date:"D d M Y" }}
             </td>
         <td>
-            <a href="{% url person transaction.transactor.pk %}">
                 {{ transaction.transactor }}
-            </a>
         </td>
         <td>
             {{ transaction.cost_dollar }}

@@ -23,7 +23,7 @@ class Person(models.Model):
 
 
 class Household(models.Model):
-    name = models.CharField(max_length=100, null=True, blank=True)
+    name = models.CharField("Household name", max_length=100, null=True, blank=True)
     creation_date = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
     persons = models.ManyToManyField(Person)
 
