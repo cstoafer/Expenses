@@ -13,7 +13,7 @@ class Person(models.Model):
         Needed for the profiles application, returns a url ref
         """
         return 'profiles_profile_detail', (), { 'username': self.user.username }
-	get_absolute_url = models.permalink(get_absolute_url)
+    get_absolute_url = models.permalink(get_absolute_url)
     def __unicode__(self):
         return self.name
     def __str__(self):
@@ -26,6 +26,10 @@ class Household(models.Model):
     name = models.CharField(max_length=100, null=True, blank=True)
     creation_date = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
     persons = models.ManyToManyField(Person)
+
+    def get_absolute_url(self):
+        return ('household_transactions', (), {'pk': self.id})
+    get_absolute_url = models.permalink(get_absolute_url)
 
     def __unicode__(self):
         return '%s: %s' % (self.name, ', '.join(str(person) for person in self.persons.all()))

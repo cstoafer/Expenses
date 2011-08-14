@@ -20,14 +20,19 @@ def render_household_pv(household):
     """
     return dict(household = household)
 
-
-
 @register.inclusion_tag('expenses/person.html')
 def render_person(person):
     """
     render html for a single person
     """
     return dict(person = person)
+
+@register.inclusion_tag('expenses/balance_table.html')
+def render_balance_table(household):
+    """
+    render html for balance table for household
+    """
+    return dict(household = household)
 
 @register.filter
 def percentage(decimal):

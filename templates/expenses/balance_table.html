@@ -1,0 +1,14 @@
+<div class="balance_table">
+    <table class="balance_table">
+    <tr>
+        <th> Name </th>
+        <th> Balance </th>
+    </tr>
+    {% for person in household.balance %}
+    <tr>
+        <td> {{ person.name }} </td>
+        <td> {{ person.balance }} </td>
+    </tr>
+    {% endfor %}
+	</table>
+</div>

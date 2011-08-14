@@ -4,8 +4,6 @@ from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 from expenses.models import Transaction, Household, Person, Invited
 
-__author__ = 'jackdreilly'
-
 
 class HouseholdTransactionForm(ModelForm):
 
@@ -48,5 +46,14 @@ class InviteToHouseholdForm(ModelForm):
     
     
 
-
-    
+class HouseholdCreateForm(ModelForm):
+	class Meta:
+		model = Household
+		fields = ('name',)
+	def save(self, force_insert=False, force_update=False, commit=True):
+# don't really get this, just copied it from stackoverflow
+		m = super(HouseholdCreateForm, self).save(commit=False)
+		if commit:
+			m.save()
+		m.persons.add(self.initial['person'])
+		return m
