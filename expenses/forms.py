@@ -38,7 +38,8 @@ class InviteToHouseholdForm(ModelForm):
     def save(self, commit=True):
 # don't really get this, just copied it from stackoverflow
 		m = super(InviteToHouseholdForm, self).save(commit=False)
-		m.user = User.objects.get(username=str(invited_user))
+		print self.cleaned_data['invited_user']
+		m.user = User.objects.get(username=self.cleaned_data['invited_user'])
 		if commit:
 			m.save()
 		
