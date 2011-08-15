@@ -2,7 +2,7 @@ from django import forms
 from django.forms.models import ModelForm
 from django.shortcuts import get_object_or_404
 from expenses.models import Transaction, Household, Person
-
+from registration.forms import RegistrationForm
 
 class HouseholdTransactionForm(ModelForm):
 
@@ -54,3 +54,16 @@ class ProfileUpdateForm(ModelForm):
             m.save()
             m.user.save()
         return m
+
+class MyRegistrationForm(RegistrationForm):
+	first_name = forms.CharField('first name')
+	last_name = forms.CharField('first name')
+	def save(self, profile_callback=None):
+		m = super(MyRegistrationForm, self).save(profile_callback=None)
+		m.first_name = self.cleaned_data['first_name']
+		m.last_name = self.cleaned_data['last_name']
+		m.save()
+		return m
+	def __init__(self, *args, **kwargs):
+		super(RegistrationForm, self).__init__(*args, **kwargs)
+		self.fields.keyOrder = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']
