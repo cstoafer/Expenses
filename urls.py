@@ -1,6 +1,8 @@
 from django.conf.urls.defaults import patterns, include, url
 import settings
 from django.contrib import admin
+from expenses.forms import ProfileUpdateForm
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -8,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^expenses/', include('expenses.urls')),
     url(r'^accounts/', include('registration.urls')),
+    url(r'^profiles/edit', 'profiles.views.edit_profile', {'form_class': ProfileUpdateForm}),
     url(r'^profiles/', include('profiles.urls')),
 )
 if settings.DEBUG:
