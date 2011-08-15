@@ -58,3 +58,25 @@ class HouseholdCreateForm(ModelForm):
 			m.save()
 		m.persons.add(self.initial['person'])
 		return m
+
+class ProfileUpdateForm(ModelForm):
+    first_name = forms.CharField('first name')
+    last_name = forms.CharField('last name')
+    email = forms.EmailField('e-mail address')
+    class Meta:
+        model = Person
+        fields = ('name',)
+    def __init__(self,*args,**kwargs):
+        super(ProfileUpdateForm,self).__init__(*args, **kwargs)
+        u = self.instance.user
+        user_stuff = dict([('email', u.email), ('first_name', u.first_name), ('last_name', u.last_name)])
+        self.initial.update(user_stuff)
+    def save(self, force_insert=False, force_update=False, commit=True):
+        m = super(ProfileUpdateForm, self).save(commit=False)
+        m.user.first_name = self.cleaned_data['first_name']
+        m.user.last_name = self.cleaned_data['last_name']
+        m.user.email = self.cleaned_data['email']
+        if commit:
+            m.save()
+            m.user.save()
+        return m

@@ -1,7 +1,7 @@
 {% extends "expenses/expenses_base.html" %}
 {% block content %}
 <h2>
-New {{ form.initial.household.name }} Transaction
+New <a href="{% url household form.initial.household.pk %}" class="household_name">{{ form.initial.household.name }} </a> Transaction
 </h2>
 <form method="POST" action="">
 {% csrf_token %}

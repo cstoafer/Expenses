@@ -5,8 +5,11 @@ from django.db import models
 # Create your models here.
 
 class Person(models.Model):
-    name = models.CharField(max_length=100)
     user = models.ForeignKey(User, unique=True)
+    name = models.CharField(max_length=100)
+    def __init__(self,*args,**kwargs):
+        super(Person,self).__init__(*args, **kwargs)
+        self.name = self.user.get_full_name()
 
     def get_absolute_url(self):
         """
@@ -23,7 +26,7 @@ class Person(models.Model):
 
 
 class Household(models.Model):
-    name = models.CharField(max_length=100, null=True, blank=True)
+    name = models.CharField("Household name", max_length=100, null=True, blank=True)
     creation_date = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
     persons = models.ManyToManyField(Person)
 
