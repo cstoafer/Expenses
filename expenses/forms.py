@@ -3,7 +3,7 @@ from django.forms.models import ModelForm
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 from expenses.models import Transaction, Household, Person, Invited
-
+from registration.forms import RegistrationForm
 
 class HouseholdTransactionForm(ModelForm):
 
@@ -12,17 +12,15 @@ class HouseholdTransactionForm(ModelForm):
         model = Transaction
 
     def __init__(self,*args,**kwargs):
-        try:
-            super(HouseholdTransactionForm,self).__init__(*args, **kwargs)
-            if self.instance:
-                persons = self.instance.household.persons
-            elif self.initial.has_key('household'):
-                persons  = self.initial['household'].persons
-            else:
-                persons = Person.objects.all()
-            self.fields['transactor'].queryset = persons
-        except:
-            "you suck" 
+
+        super(HouseholdTransactionForm,self).__init__(*args, **kwargs)
+        if kwargs['instance']:
+            persons = self.instance.household.persons
+        elif self.initial.has_key('household'):
+            persons  = self.initial['household'].persons
+        else:
+            persons = Person.objects.all()
+        self.fields['transactor'].queryset = persons
 
     
 
@@ -52,16 +50,7 @@ class InviteToHouseholdForm(ModelForm):
 
         
         return self.cleaned_data['invited_user']
-                
             
-#    def clean(self):
-#        check_user_exists = User.objects.filter(username__iexact=self.cleaned_data['invited_user'])
-#        if not check_user_exists: #check_user_exists is None:
-#            raise forms.ValidationError("The username does not exist.")
-           
-#        return self.cleaned_data
-            
-        
     def save(self, commit=True):
         m = super(InviteToHouseholdForm, self).save(commit=False)
         m.user = User.objects.get(username=self.cleaned_data['invited_user'])
@@ -106,3 +95,16 @@ class ProfileUpdateForm(ModelForm):
             m.save()
             m.user.save()
         return m
+
+class MyRegistrationForm(RegistrationForm):
+	first_name = forms.CharField('first name')
+	last_name = forms.CharField('first name')
+	def save(self, profile_callback=None):
+		m = super(MyRegistrationForm, self).save(profile_callback=None)
+		m.first_name = self.cleaned_data['first_name']
+		m.last_name = self.cleaned_data['last_name']
+		m.save()
+		return m
+	def __init__(self, *args, **kwargs):
+		super(RegistrationForm, self).__init__(*args, **kwargs)
+		self.fields.keyOrder = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']
