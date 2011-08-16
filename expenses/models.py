@@ -54,14 +54,9 @@ class Household(models.Model):
         for k,v in table.iteritems():
             person = self.persons.get(id=k)
             person.balance = v['down'] - v['up']
+            person.balance_dollar = '$%.2f' % round(person.balance, 3)
             out_persons.append(person)
         return out_persons
-
-            
-
-            
-
-
         
 
 class Transaction(models.Model):
